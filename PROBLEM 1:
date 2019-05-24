@@ -1,0 +1,54 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int arr[10];
+	int I, SI, LI, T;
+	float A;
+	
+	
+	cout << "What are your 10 integers? : " << endl;
+	
+	for (I = 0; I < 10; I++)
+	arr[I] = 0;
+	
+	for (I = 0; I < 10; I++)
+	{
+		cin >> arr[I];
+	}
+	
+	LI = arr[0];
+	for (I = 0; I < 10; I++)
+	{
+		if (LI < arr[I])
+		{
+			LI = arr[I];
+		}
+	}
+	
+	SI = arr[0];
+	for (I = 0; I < 10; I++)
+	{
+		if (SI > arr[I])
+		{
+			SI = arr[I];
+		}
+	}
+	
+	
+	T = 0;
+	for (I = 0; I < 10; I++)
+	T += arr[I];
+	A = T/10;
+	
+	cout << "The smallest integer is : " << SI << endl;
+	cout << "The largest integer is : " << LI << endl;
+	cout << "The total of the integers is : " << T << endl;
+	cout << "The average of the integers is : " << A << endl;
+	
+	_getch();
+	return 0;
+}
