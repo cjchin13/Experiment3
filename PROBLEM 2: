@@ -1,0 +1,66 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int TA[7], TB[7], TC[7], A;
+	string PA, PB, PC;
+	
+	cout << "What is the first province you want to store temperature data? : "; cin >> PA;
+	cout << "What is the temperature of each day during the week? : " << endl;
+	
+	for (A = 0; A < 7; A++)
+	{
+		cout << "Day " << A + 1 << " : ";
+		cin >> TA[A];
+	}
+	
+	cout << endl;
+	
+	cout << "What is the second province you want to store temperature data? : "; cin >> PB;
+	cout << "What is the temperature of each day during the week? : " << endl;
+	
+	for (A = 0; A < 7; A++)
+	{
+		cout << "Day " << A + 1 << " : ";
+		cin >> TB[A];
+	}
+	
+	cout << endl;
+	
+	cout << "What is the third province you want to store temperature data? : "; cin >> PC;
+	cout << "What is the temperature of each day during the week? : " << endl;
+		
+	for (A = 0; A < 7; A++)
+	{
+		cout << "Day " << A + 1 << " : ";
+		cin >> TC[A];
+	}
+	
+	cout << endl;
+	cout << "Here are the stored values of temperatures : " << endl;
+	
+	for (A = 0; A < 7; A++)
+	{
+		cout << PA << ", Day " << A + 1 << " : " << TA[A] << endl;
+	}
+	
+	cout << endl;
+	
+	for (A = 0; A < 7; A++)
+	{
+		cout << PB << ", Day " << A + 1 << " : " << TB[A] << endl;
+	}
+	
+	cout << endl;
+	
+	for (A = 0; A < 7; A++)
+	{
+		cout << PC << ", Day " << A + 1 << " : " << TC[A] << endl;
+	}
+	
+	_getch();
+	return 0;
+}
