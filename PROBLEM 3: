@@ -1,0 +1,39 @@
+#include <iostream>
+#include <conio.h>
+#include <cstring>
+
+using namespace std;
+
+int main()
+{
+	int A, B;
+	char arr[100], D;
+	
+	cout << "What are the elements you want to be reversed? : ";
+	cin >> arr;
+	
+	cout << "Here are the reversed elements : ";
+	
+	int C = strlen(arr);
+	
+	for (A = 0; A < C; A++)
+	{
+		for (B = A + 1; B < C; B++)
+		{
+			if (arr[A] > arr[B])
+			{
+				D = arr[A];
+				arr[A] = arr[B];
+				arr[B] = D;
+			}
+		}
+	}
+	
+	for (A = 0; A < C; A++)
+	{
+		cout << arr[A];
+	}
+	
+	_getch();
+	return 0;
+}
